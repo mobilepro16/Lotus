@@ -1,0 +1,1124 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70742F16E18FC3E9A5930B22 /* Pods_lotus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414EECC0B5FFCAAE73E6F38D /* Pods_lotus.framework */; };
+		84137FB426448C30007C9E00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84137FB326448C2F007C9E00 /* GoogleService-Info.plist */; };
+		8414041126166DE500C9A2A6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414041026166DE500C9A2A6 /* ChatViewController.swift */; };
+		84169D8F2683E8900037A103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84169D8D2683E8900037A103 /* Main.storyboard */; };
+		84169D93268583F70037A103 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84169D92268583E80037A103 /* ProfileEditViewController.swift */; };
+		8433AA0326BCCC6600C4DDD9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433AA0226BCCC6500C4DDD9 /* SignupViewController.swift */; };
+		8484217A2620CA8B008EDDF4 /* CreateChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848421792620CA8A008EDDF4 /* CreateChannelViewController.swift */; };
+		848DF26B264ED66A0097C01A /* ChoosePeoplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DF26A264ED66A0097C01A /* ChoosePeoplesViewController.swift */; };
+		8491B6C8261E92CF00EA6295 /* TimeConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491B6C6261E92CE00EA6295 /* TimeConvertor.swift */; };
+		8491B6C9261E92CF00EA6295 /* SendBirdInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491B6C7261E92CE00EA6295 /* SendBirdInterface.swift */; };
+		8491B6DE261E967200EA6295 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491B6DD261E967200EA6295 /* Store.swift */; };
+		8491B6E1261E996100EA6295 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491B6E0261E996100EA6295 /* DateExtension.swift */; };
+		8499D1A426716B9000A32BDF /* NotificationsTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D16926716B8F00A32BDF /* NotificationsTableViewHeader.swift */; };
+		8499D1A526716B9000A32BDF /* MessageTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D16A26716B8F00A32BDF /* MessageTableViewHeader.swift */; };
+		8499D1A626716B9000A32BDF /* MessageTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D16B26716B8F00A32BDF /* MessageTableViewHeader.xib */; };
+		8499D1A726716B9000A32BDF /* HistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D16C26716B8F00A32BDF /* HistoryView.xib */; };
+		8499D1A826716B9000A32BDF /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D16D26716B8F00A32BDF /* HeaderView.xib */; };
+		8499D1A926716B9000A32BDF /* OrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D16E26716B8F00A32BDF /* OrView.swift */; };
+		8499D1AA26716B9000A32BDF /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D16F26716B8F00A32BDF /* BookmarkView.swift */; };
+		8499D1AB26716B9000A32BDF /* CustomNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D17026716B8F00A32BDF /* CustomNibView.swift */; };
+		8499D1AC26716B9000A32BDF /* MusicTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D17126716B8F00A32BDF /* MusicTableViewHeader.swift */; };
+		8499D1AD26716B9000A32BDF /* NotificationsTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D17226716B8F00A32BDF /* NotificationsTableViewHeader.xib */; };
+		8499D1AE26716B9000A32BDF /* PendingHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D17426716B8F00A32BDF /* PendingHistoryTableViewCell.swift */; };
+		8499D1AF26716B9000A32BDF /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D17526716B8F00A32BDF /* NotificationTableViewCell.xib */; };
+		8499D1B026716B9000A32BDF /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D17626716B8F00A32BDF /* BookmarkTableViewCell.swift */; };
+		8499D1B126716B9000A32BDF /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D17726716B8F00A32BDF /* TimelineTableViewCell.swift */; };
+		8499D1B226716B9000A32BDF /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D17826716B8F00A32BDF /* MusicTableViewCell.swift */; };
+		8499D1B326716B9000A32BDF /* TimelineMusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D17926716B8F00A32BDF /* TimelineMusicTableViewCell.swift */; };
+		8499D1B426716B9000A32BDF /* ReceivedMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D17A26716B8F00A32BDF /* ReceivedMessageTableViewCell.swift */; };
+		8499D1B526716B9000A32BDF /* HistoryCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D17B26716B8F00A32BDF /* HistoryCommentTableViewCell.xib */; };
+		8499D1B626716B9000A32BDF /* CompactMusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D17C26716B9000A32BDF /* CompactMusicTableViewCell.swift */; };
+		8499D1B726716B9000A32BDF /* SentMusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D17D26716B9000A32BDF /* SentMusicTableViewCell.swift */; };
+		8499D1B826716B9000A32BDF /* PendingHistoryCompactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D17E26716B9000A32BDF /* PendingHistoryCompactTableViewCell.swift */; };
+		8499D1B926716B9000A32BDF /* CompactMusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D17F26716B9000A32BDF /* CompactMusicTableViewCell.xib */; };
+		8499D1BA26716B9000A32BDF /* SentMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D18026716B9000A32BDF /* SentMessageTableViewCell.swift */; };
+		8499D1BB26716B9000A32BDF /* TimelineMusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D18126716B9000A32BDF /* TimelineMusicTableViewCell.xib */; };
+		8499D1BC26716B9000A32BDF /* PendingHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D18226716B9000A32BDF /* PendingHistoryTableViewCell.xib */; };
+		8499D1BD26716B9000A32BDF /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D18326716B9000A32BDF /* UserTableViewCell.swift */; };
+		8499D1BE26716B9000A32BDF /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D18426716B9000A32BDF /* MusicTableViewCell.xib */; };
+		8499D1BF26716B9000A32BDF /* ReceivedMusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D18526716B9000A32BDF /* ReceivedMusicTableViewCell.swift */; };
+		8499D1C026716B9000A32BDF /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D18626716B9000A32BDF /* TimelineTableViewCell.xib */; };
+		8499D1C126716B9000A32BDF /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D18726716B9000A32BDF /* NotificationTableViewCell.swift */; };
+		8499D1C226716B9000A32BDF /* IndicatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D18826716B9000A32BDF /* IndicatorTableViewCell.swift */; };
+		8499D1C326716B9000A32BDF /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D18926716B9000A32BDF /* UserTableViewCell.xib */; };
+		8499D1C426716B9000A32BDF /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D18A26716B9000A32BDF /* MessageTableViewCell.swift */; };
+		8499D1C526716B9000A32BDF /* BookmarkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D18B26716B9000A32BDF /* BookmarkTableViewCell.xib */; };
+		8499D1C626716B9000A32BDF /* HistoryCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D18C26716B9000A32BDF /* HistoryCommentTableViewCell.swift */; };
+		8499D1C726716B9000A32BDF /* PendingHistoryCompactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D18D26716B9000A32BDF /* PendingHistoryCompactTableViewCell.xib */; };
+		8499D1C826716B9000A32BDF /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D18E26716B9000A32BDF /* MessageTableViewCell.xib */; };
+		8499D1C926716B9000A32BDF /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D18F26716B9000A32BDF /* AlbumView.swift */; };
+		8499D1CA26716B9000A32BDF /* TableHeaderSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D19026716B9000A32BDF /* TableHeaderSearchView.swift */; };
+		8499D1CB26716B9000A32BDF /* AlbumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D19126716B9000A32BDF /* AlbumView.xib */; };
+		8499D1CC26716B9000A32BDF /* ListeningToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D19226716B9000A32BDF /* ListeningToView.swift */; };
+		8499D1CD26716B9000A32BDF /* MusicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D19326716B9000A32BDF /* MusicView.xib */; };
+		8499D1CE26716B9000A32BDF /* PendingHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D19426716B9000A32BDF /* PendingHistoryView.xib */; };
+		8499D1CF26716B9000A32BDF /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D19526716B9000A32BDF /* MusicView.swift */; };
+		8499D1D026716B9000A32BDF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D19626716B9000A32BDF /* HeaderView.swift */; };
+		8499D1D126716B9000A32BDF /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D19726716B9000A32BDF /* TimelineView.swift */; };
+		8499D1D226716B9000A32BDF /* ArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D19826716B9000A32BDF /* ArtistView.swift */; };
+		8499D1D326716B9000A32BDF /* SmallPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D19926716B9000A32BDF /* SmallPlayerView.xib */; };
+		8499D1D426716B9000A32BDF /* TableHeaderSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D19A26716B9000A32BDF /* TableHeaderSearchView.xib */; };
+		8499D1D526716B9000A32BDF /* TimelineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D19B26716B9000A32BDF /* TimelineView.xib */; };
+		8499D1D626716B9000A32BDF /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D19C26716B9000A32BDF /* HistoryView.swift */; };
+		8499D1D726716B9000A32BDF /* BookmarkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D19D26716B9000A32BDF /* BookmarkView.xib */; };
+		8499D1D826716B9000A32BDF /* ListeningToView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D19E26716B9000A32BDF /* ListeningToView.xib */; };
+		8499D1D926716B9000A32BDF /* ArtistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D19F26716B9000A32BDF /* ArtistView.xib */; };
+		8499D1DA26716B9000A32BDF /* OrView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D1A026716B9000A32BDF /* OrView.xib */; };
+		8499D1DB26716B9000A32BDF /* PendingHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D1A126716B9000A32BDF /* PendingHistoryView.swift */; };
+		8499D1DC26716B9000A32BDF /* MusicTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D1A226716B9000A32BDF /* MusicTableViewHeader.xib */; };
+		8499D1DD26716B9000A32BDF /* SmallPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D1A326716B9000A32BDF /* SmallPlayerView.swift */; };
+		8499D1E126716EA200A32BDF /* CurrentlyListeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D1E026716EA200A32BDF /* CurrentlyListeningView.swift */; };
+		8499D1E426716EBD00A32BDF /* CurrentlyListeningView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D1E326716EBD00A32BDF /* CurrentlyListeningView.xib */; };
+		84D386B1262A135C003838DE /* SendMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D386B0262A135C003838DE /* SendMusicViewController.swift */; };
+		84E7D09D25F7304500EC8CF3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7D09C25F7304500EC8CF3 /* WebViewController.swift */; };
+		84E8CFDC2644DE34005CE9A0 /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8CFDB2644DE34005CE9A0 /* PushNotificationManager.swift */; };
+		84E8CFDF26457C1D005CE9A0 /* PushNotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8CFDE26457C1D005CE9A0 /* PushNotificationSender.swift */; };
+		84EC4C132691133D0014214E /* WebContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC4C122691133D0014214E /* WebContentViewController.swift */; };
+		9E01641723DB41FE00A2F9D2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E01641623DB41FE00A2F9D2 /* LoginViewController.swift */; };
+		9E10FBE123F6E22F00A154F1 /* FollowListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10FBE023F6E22F00A154F1 /* FollowListViewController.swift */; };
+		9E10FBE923F7027200A154F1 /* SearchUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10FBE823F7027200A154F1 /* SearchUsersViewController.swift */; };
+		9E2184D723F586BC00D13DAD /* HistoryCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2184D623F586BC00D13DAD /* HistoryCommentViewController.swift */; };
+		9E2184D923F5872600D13DAD /* StoryboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2184D823F5872600D13DAD /* StoryboardConstants.swift */; };
+		9E2184DF23F59A2500D13DAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2184DE23F59A2500D13DAD /* User.swift */; };
+		9E24737923E3250C000FA486 /* AccountServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E24737823E3250C000FA486 /* AccountServices.swift */; };
+		9E24737B23E325FE000FA486 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E24737A23E325FE000FA486 /* Globals.swift */; };
+		9E24737D23E327DB000FA486 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E24737C23E327DB000FA486 /* Profile.swift */; };
+		9E24737F23E3282E000FA486 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E24737E23E3282E000FA486 /* Music.swift */; };
+		9E24738323E36845000FA486 /* LotusError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E24738223E36845000FA486 /* LotusError.swift */; };
+		9E24738523E368E6000FA486 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E24738423E368E6000FA486 /* Services.swift */; };
+		9E2E7A582406FE9B0071672B /* MessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E7A572406FE9B0071672B /* MessagingViewController.swift */; };
+		9E32B879240027C6001FF6CE /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E32B878240027C6001FF6CE /* MusicPlayerViewController.swift */; };
+		9E63F56223E20D5B003D69FB /* ServerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E63F56123E20D5B003D69FB /* ServerConstants.swift */; };
+		9E63F56423E214E1003D69FB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E63F56323E214E1003D69FB /* Extensions.swift */; };
+		9E63F56723E21847003D69FB /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E63F56623E21847003D69FB /* AuthServices.swift */; };
+		9E63F56A23E2199C003D69FB /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E63F56923E2199C003D69FB /* Token.swift */; };
+		9E70482423FF17410014433E /* UserCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E70482323FF17410014433E /* UserCurrent.swift */; };
+		9E76E41423BE6A99005E29BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76E41323BE6A99005E29BE /* AppDelegate.swift */; };
+		9E76E41623BE6A99005E29BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76E41523BE6A99005E29BE /* SceneDelegate.swift */; };
+		9E76E41823BE6A99005E29BE /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76E41723BE6A99005E29BE /* TimelineViewController.swift */; };
+		9E76E41D23BE6A9B005E29BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E76E41C23BE6A9B005E29BE /* Assets.xcassets */; };
+		9E76E42023BE6A9B005E29BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E76E41E23BE6A9B005E29BE /* LaunchScreen.storyboard */; };
+		9E78EE7A23F31B0800308A63 /* UserHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E78EE7923F31B0800308A63 /* UserHistory.swift */; };
+		9E9EB87623F48E8600CEE805 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9EB87523F48E8600CEE805 /* Comment.swift */; };
+		9EA35E25240845B300A245A4 /* TimelineHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA35E24240845B300A245A4 /* TimelineHistory.swift */; };
+		9EA8490423E48B40005515AD /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA8490323E48B40005515AD /* Content.swift */; };
+		9EA8490623E48F7F005515AD /* PagedContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA8490523E48F7F005515AD /* PagedContent.swift */; };
+		9EA8490923E490C9005515AD /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA8490823E490C9005515AD /* Sort.swift */; };
+		9EA8490B23E490E3005515AD /* Pageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA8490A23E490E3005515AD /* Pageable.swift */; };
+		9EBEA4992417CEBD009D5866 /* OutlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBEA4982417CEBD009D5866 /* OutlineButton.swift */; };
+		9EBEA4A32418253C009D5866 /* LotusNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBEA4A22418253C009D5866 /* LotusNotification.swift */; };
+		9EC5743423F8B3A400E52A78 /* SearchMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5743323F8B3A400E52A78 /* SearchMusicViewController.swift */; };
+		9EC669DB2469D0F2001E13DF /* UserActionServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC669DA2469D0F2001E13DF /* UserActionServices.swift */; };
+		9EC669DD2469D135001E13DF /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC669DC2469D135001E13DF /* Album.swift */; };
+		9EC669DF2469D3A9001E13DF /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC669DE2469D3A9001E13DF /* Artist.swift */; };
+		9ECD167823FC231B0095DD23 /* SpotifyToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECD167723FC231B0095DD23 /* SpotifyToken.swift */; };
+		9ECD167A23FC27F10095DD23 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECD167923FC27F10095DD23 /* MusicPlayer.swift */; };
+		9ECF394C251256BB005D8DAE /* BookmarkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF394B251256BB005D8DAE /* BookmarkServices.swift */; };
+		9ECF394E25125B06005D8DAE /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECF394D25125B06005D8DAE /* Bookmark.swift */; };
+		9ED15B6E23FADDEB006F3E14 /* AppleMusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED15B6D23FADDEB006F3E14 /* AppleMusicPlayer.swift */; };
+		9ED2FA94241AB5360003181D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED2FA93241AB5360003181D /* HistoryViewController.swift */; };
+		9EE3583023C3685300AD1E85 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3582F23C3685300AD1E85 /* ColorUtil.swift */; };
+		9EE3583223C37CAA00AD1E85 /* LotusTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3583123C37CAA00AD1E85 /* LotusTabBarController.swift */; };
+		9EE3584223C39FF600AD1E85 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3584123C39FF600AD1E85 /* ProfileViewController.swift */; };
+		9EE98876240C7030008A7445 /* PartyServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE98875240C7030008A7445 /* PartyServices.swift */; };
+		9EE98879240C7066008A7445 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE98878240C7066008A7445 /* Party.swift */; };
+		9EEED27223C6245F00DDD727 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEED27123C6245F00DDD727 /* SettingsViewController.swift */; };
+		9EF9110E24194D0200E3774B /* SpotifyPlayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF9110D24194D0200E3774B /* SpotifyPlayResponse.swift */; };
+		9EFD231923E85E89008F8937 /* ContentServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFD231823E85E89008F8937 /* ContentServices.swift */; };
+		9EFD438C23E9E80F00741B38 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFD438B23E9E80F00741B38 /* SpotifyiOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		414EECC0B5FFCAAE73E6F38D /* Pods_lotus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lotus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74D32C14EEF1B01AAFA05843 /* Pods-lotus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lotus.release.xcconfig"; path = "Target Support Files/Pods-lotus/Pods-lotus.release.xcconfig"; sourceTree = "<group>"; };
+		84137FB326448C2F007C9E00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8414041026166DE500C9A2A6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		84169D8E2683E8900037A103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84169D92268583E80037A103 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		8433AA0226BCCC6500C4DDD9 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		848421792620CA8A008EDDF4 /* CreateChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChannelViewController.swift; sourceTree = "<group>"; };
+		848DF26A264ED66A0097C01A /* ChoosePeoplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePeoplesViewController.swift; sourceTree = "<group>"; };
+		8491B6C6261E92CE00EA6295 /* TimeConvertor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeConvertor.swift; sourceTree = "<group>"; };
+		8491B6C7261E92CE00EA6295 /* SendBirdInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendBirdInterface.swift; sourceTree = "<group>"; };
+		8491B6DD261E967200EA6295 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		8491B6E0261E996100EA6295 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		8499D16926716B8F00A32BDF /* NotificationsTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewHeader.swift; sourceTree = "<group>"; };
+		8499D16A26716B8F00A32BDF /* MessageTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewHeader.swift; sourceTree = "<group>"; };
+		8499D16B26716B8F00A32BDF /* MessageTableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTableViewHeader.xib; sourceTree = "<group>"; };
+		8499D16C26716B8F00A32BDF /* HistoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryView.xib; sourceTree = "<group>"; };
+		8499D16D26716B8F00A32BDF /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		8499D16E26716B8F00A32BDF /* OrView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrView.swift; sourceTree = "<group>"; };
+		8499D16F26716B8F00A32BDF /* BookmarkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
+		8499D17026716B8F00A32BDF /* CustomNibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNibView.swift; sourceTree = "<group>"; };
+		8499D17126716B8F00A32BDF /* MusicTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableViewHeader.swift; sourceTree = "<group>"; };
+		8499D17226716B8F00A32BDF /* NotificationsTableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationsTableViewHeader.xib; sourceTree = "<group>"; };
+		8499D17426716B8F00A32BDF /* PendingHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		8499D17526716B8F00A32BDF /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		8499D17626716B8F00A32BDF /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
+		8499D17726716B8F00A32BDF /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		8499D17826716B8F00A32BDF /* MusicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		8499D17926716B8F00A32BDF /* TimelineMusicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineMusicTableViewCell.swift; sourceTree = "<group>"; };
+		8499D17A26716B8F00A32BDF /* ReceivedMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedMessageTableViewCell.swift; sourceTree = "<group>"; };
+		8499D17B26716B8F00A32BDF /* HistoryCommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryCommentTableViewCell.xib; sourceTree = "<group>"; };
+		8499D17C26716B9000A32BDF /* CompactMusicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompactMusicTableViewCell.swift; sourceTree = "<group>"; };
+		8499D17D26716B9000A32BDF /* SentMusicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentMusicTableViewCell.swift; sourceTree = "<group>"; };
+		8499D17E26716B9000A32BDF /* PendingHistoryCompactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingHistoryCompactTableViewCell.swift; sourceTree = "<group>"; };
+		8499D17F26716B9000A32BDF /* CompactMusicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompactMusicTableViewCell.xib; sourceTree = "<group>"; };
+		8499D18026716B9000A32BDF /* SentMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentMessageTableViewCell.swift; sourceTree = "<group>"; };
+		8499D18126716B9000A32BDF /* TimelineMusicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineMusicTableViewCell.xib; sourceTree = "<group>"; };
+		8499D18226716B9000A32BDF /* PendingHistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PendingHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		8499D18326716B9000A32BDF /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		8499D18426716B9000A32BDF /* MusicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
+		8499D18526716B9000A32BDF /* ReceivedMusicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivedMusicTableViewCell.swift; sourceTree = "<group>"; };
+		8499D18626716B9000A32BDF /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
+		8499D18726716B9000A32BDF /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		8499D18826716B9000A32BDF /* IndicatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorTableViewCell.swift; sourceTree = "<group>"; };
+		8499D18926716B9000A32BDF /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		8499D18A26716B9000A32BDF /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		8499D18B26716B9000A32BDF /* BookmarkTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookmarkTableViewCell.xib; sourceTree = "<group>"; };
+		8499D18C26716B9000A32BDF /* HistoryCommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCommentTableViewCell.swift; sourceTree = "<group>"; };
+		8499D18D26716B9000A32BDF /* PendingHistoryCompactTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PendingHistoryCompactTableViewCell.xib; sourceTree = "<group>"; };
+		8499D18E26716B9000A32BDF /* MessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		8499D18F26716B9000A32BDF /* AlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		8499D19026716B9000A32BDF /* TableHeaderSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeaderSearchView.swift; sourceTree = "<group>"; };
+		8499D19126716B9000A32BDF /* AlbumView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumView.xib; sourceTree = "<group>"; };
+		8499D19226716B9000A32BDF /* ListeningToView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListeningToView.swift; sourceTree = "<group>"; };
+		8499D19326716B9000A32BDF /* MusicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicView.xib; sourceTree = "<group>"; };
+		8499D19426716B9000A32BDF /* PendingHistoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PendingHistoryView.xib; sourceTree = "<group>"; };
+		8499D19526716B9000A32BDF /* MusicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
+		8499D19626716B9000A32BDF /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8499D19726716B9000A32BDF /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		8499D19826716B9000A32BDF /* ArtistView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistView.swift; sourceTree = "<group>"; };
+		8499D19926716B9000A32BDF /* SmallPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmallPlayerView.xib; sourceTree = "<group>"; };
+		8499D19A26716B9000A32BDF /* TableHeaderSearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableHeaderSearchView.xib; sourceTree = "<group>"; };
+		8499D19B26716B9000A32BDF /* TimelineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineView.xib; sourceTree = "<group>"; };
+		8499D19C26716B9000A32BDF /* HistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		8499D19D26716B9000A32BDF /* BookmarkView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookmarkView.xib; sourceTree = "<group>"; };
+		8499D19E26716B9000A32BDF /* ListeningToView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListeningToView.xib; sourceTree = "<group>"; };
+		8499D19F26716B9000A32BDF /* ArtistView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArtistView.xib; sourceTree = "<group>"; };
+		8499D1A026716B9000A32BDF /* OrView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrView.xib; sourceTree = "<group>"; };
+		8499D1A126716B9000A32BDF /* PendingHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingHistoryView.swift; sourceTree = "<group>"; };
+		8499D1A226716B9000A32BDF /* MusicTableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicTableViewHeader.xib; sourceTree = "<group>"; };
+		8499D1A326716B9000A32BDF /* SmallPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallPlayerView.swift; sourceTree = "<group>"; };
+		8499D1E026716EA200A32BDF /* CurrentlyListeningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentlyListeningView.swift; sourceTree = "<group>"; };
+		8499D1E326716EBD00A32BDF /* CurrentlyListeningView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentlyListeningView.xib; sourceTree = "<group>"; };
+		84D386B0262A135C003838DE /* SendMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMusicViewController.swift; sourceTree = "<group>"; };
+		84E7D09C25F7304500EC8CF3 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		84E8CFDB2644DE34005CE9A0 /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
+		84E8CFDE26457C1D005CE9A0 /* PushNotificationSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationSender.swift; sourceTree = "<group>"; };
+		84EC4C122691133D0014214E /* WebContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentViewController.swift; sourceTree = "<group>"; };
+		9E01641623DB41FE00A2F9D2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9E01641823DB451700A2F9D2 /* lotus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lotus.entitlements; sourceTree = "<group>"; };
+		9E10FBE023F6E22F00A154F1 /* FollowListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowListViewController.swift; sourceTree = "<group>"; };
+		9E10FBE823F7027200A154F1 /* SearchUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsersViewController.swift; sourceTree = "<group>"; };
+		9E2184D623F586BC00D13DAD /* HistoryCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCommentViewController.swift; sourceTree = "<group>"; };
+		9E2184D823F5872600D13DAD /* StoryboardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardConstants.swift; sourceTree = "<group>"; };
+		9E2184DE23F59A2500D13DAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9E24737823E3250C000FA486 /* AccountServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountServices.swift; sourceTree = "<group>"; };
+		9E24737A23E325FE000FA486 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		9E24737C23E327DB000FA486 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		9E24737E23E3282E000FA486 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		9E24738223E36845000FA486 /* LotusError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotusError.swift; sourceTree = "<group>"; };
+		9E24738423E368E6000FA486 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		9E2E7A572406FE9B0071672B /* MessagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingViewController.swift; sourceTree = "<group>"; };
+		9E32B878240027C6001FF6CE /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
+		9E63F56123E20D5B003D69FB /* ServerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConstants.swift; sourceTree = "<group>"; };
+		9E63F56323E214E1003D69FB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9E63F56623E21847003D69FB /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
+		9E63F56923E2199C003D69FB /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		9E70482323FF17410014433E /* UserCurrent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCurrent.swift; sourceTree = "<group>"; };
+		9E76E41023BE6A99005E29BE /* lotus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lotus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E76E41323BE6A99005E29BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9E76E41523BE6A99005E29BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9E76E41723BE6A99005E29BE /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		9E76E41C23BE6A9B005E29BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E76E41F23BE6A9B005E29BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E76E42123BE6A9B005E29BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E78EE7923F31B0800308A63 /* UserHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHistory.swift; sourceTree = "<group>"; };
+		9E9EB87523F48E8600CEE805 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		9EA35E24240845B300A245A4 /* TimelineHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineHistory.swift; sourceTree = "<group>"; };
+		9EA8490323E48B40005515AD /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		9EA8490523E48F7F005515AD /* PagedContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedContent.swift; sourceTree = "<group>"; };
+		9EA8490823E490C9005515AD /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
+		9EA8490A23E490E3005515AD /* Pageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pageable.swift; sourceTree = "<group>"; };
+		9EBEA4982417CEBD009D5866 /* OutlineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineButton.swift; sourceTree = "<group>"; };
+		9EBEA4A22418253C009D5866 /* LotusNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotusNotification.swift; sourceTree = "<group>"; };
+		9EC5743323F8B3A400E52A78 /* SearchMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicViewController.swift; sourceTree = "<group>"; };
+		9EC669DA2469D0F2001E13DF /* UserActionServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionServices.swift; sourceTree = "<group>"; };
+		9EC669DC2469D135001E13DF /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		9EC669DE2469D3A9001E13DF /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		9ECD167723FC231B0095DD23 /* SpotifyToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyToken.swift; sourceTree = "<group>"; };
+		9ECD167923FC27F10095DD23 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		9ECF394B251256BB005D8DAE /* BookmarkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkServices.swift; sourceTree = "<group>"; };
+		9ECF394D25125B06005D8DAE /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
+		9ED15B6D23FADDEB006F3E14 /* AppleMusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicPlayer.swift; sourceTree = "<group>"; };
+		9ED2FA93241AB5360003181D /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		9EE3582F23C3685300AD1E85 /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
+		9EE3583123C37CAA00AD1E85 /* LotusTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotusTabBarController.swift; sourceTree = "<group>"; };
+		9EE3584123C39FF600AD1E85 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9EE98875240C7030008A7445 /* PartyServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyServices.swift; sourceTree = "<group>"; };
+		9EE98878240C7066008A7445 /* Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
+		9EEED27123C6245F00DDD727 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9EF9110D24194D0200E3774B /* SpotifyPlayResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPlayResponse.swift; sourceTree = "<group>"; };
+		9EFD231823E85E89008F8937 /* ContentServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentServices.swift; sourceTree = "<group>"; };
+		9EFD438B23E9E80F00741B38 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		9EFD438D23E9EE9E00741B38 /* lotus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lotus-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		CB63D127C22DF1E53DC0A86B /* Pods-lotus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lotus.debug.xcconfig"; path = "Target Support Files/Pods-lotus/Pods-lotus.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E76E40D23BE6A99005E29BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70742F16E18FC3E9A5930B22 /* Pods_lotus.framework in Frameworks */,
+				9EFD438C23E9E80F00741B38 /* SpotifyiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F6230DFAF3BBD3636C3491C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EFD438B23E9E80F00741B38 /* SpotifyiOS.framework */,
+				414EECC0B5FFCAAE73E6F38D /* Pods_lotus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6513C01A7201F21B422753C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB63D127C22DF1E53DC0A86B /* Pods-lotus.debug.xcconfig */,
+				74D32C14EEF1B01AAFA05843 /* Pods-lotus.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8491B6C5261E92CE00EA6295 /* SendBirdInterface */ = {
+			isa = PBXGroup;
+			children = (
+				8491B6C6261E92CE00EA6295 /* TimeConvertor.swift */,
+				8491B6C7261E92CE00EA6295 /* SendBirdInterface.swift */,
+			);
+			path = SendBirdInterface;
+			sourceTree = "<group>";
+		};
+		8499D16826716B8F00A32BDF /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				8499D17326716B8F00A32BDF /* TableViewCells */,
+				8499D16A26716B8F00A32BDF /* MessageTableViewHeader.swift */,
+				8499D16B26716B8F00A32BDF /* MessageTableViewHeader.xib */,
+				8499D19C26716B9000A32BDF /* HistoryView.swift */,
+				8499D16C26716B8F00A32BDF /* HistoryView.xib */,
+				8499D16E26716B8F00A32BDF /* OrView.swift */,
+				8499D1A026716B9000A32BDF /* OrView.xib */,
+				8499D17026716B8F00A32BDF /* CustomNibView.swift */,
+				8499D16926716B8F00A32BDF /* NotificationsTableViewHeader.swift */,
+				8499D17226716B8F00A32BDF /* NotificationsTableViewHeader.xib */,
+				8499D18F26716B9000A32BDF /* AlbumView.swift */,
+				8499D19126716B9000A32BDF /* AlbumView.xib */,
+				8499D19526716B9000A32BDF /* MusicView.swift */,
+				8499D19326716B9000A32BDF /* MusicView.xib */,
+				8499D1A126716B9000A32BDF /* PendingHistoryView.swift */,
+				8499D19426716B9000A32BDF /* PendingHistoryView.xib */,
+				8499D19626716B9000A32BDF /* HeaderView.swift */,
+				8499D16D26716B8F00A32BDF /* HeaderView.xib */,
+				8499D1A326716B9000A32BDF /* SmallPlayerView.swift */,
+				8499D19926716B9000A32BDF /* SmallPlayerView.xib */,
+				8499D19026716B9000A32BDF /* TableHeaderSearchView.swift */,
+				8499D19A26716B9000A32BDF /* TableHeaderSearchView.xib */,
+				8499D19726716B9000A32BDF /* TimelineView.swift */,
+				8499D19B26716B9000A32BDF /* TimelineView.xib */,
+				8499D1E026716EA200A32BDF /* CurrentlyListeningView.swift */,
+				8499D1E326716EBD00A32BDF /* CurrentlyListeningView.xib */,
+				8499D16F26716B8F00A32BDF /* BookmarkView.swift */,
+				8499D19D26716B9000A32BDF /* BookmarkView.xib */,
+				8499D19226716B9000A32BDF /* ListeningToView.swift */,
+				8499D19E26716B9000A32BDF /* ListeningToView.xib */,
+				8499D19826716B9000A32BDF /* ArtistView.swift */,
+				8499D19F26716B9000A32BDF /* ArtistView.xib */,
+				8499D17126716B8F00A32BDF /* MusicTableViewHeader.swift */,
+				8499D1A226716B9000A32BDF /* MusicTableViewHeader.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		8499D17326716B8F00A32BDF /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8499D17826716B8F00A32BDF /* MusicTableViewCell.swift */,
+				8499D18426716B9000A32BDF /* MusicTableViewCell.xib */,
+				8499D17926716B8F00A32BDF /* TimelineMusicTableViewCell.swift */,
+				8499D18126716B9000A32BDF /* TimelineMusicTableViewCell.xib */,
+				8499D18C26716B9000A32BDF /* HistoryCommentTableViewCell.swift */,
+				8499D17B26716B8F00A32BDF /* HistoryCommentTableViewCell.xib */,
+				8499D17E26716B9000A32BDF /* PendingHistoryCompactTableViewCell.swift */,
+				8499D18D26716B9000A32BDF /* PendingHistoryCompactTableViewCell.xib */,
+				8499D17C26716B9000A32BDF /* CompactMusicTableViewCell.swift */,
+				8499D17F26716B9000A32BDF /* CompactMusicTableViewCell.xib */,
+				8499D17426716B8F00A32BDF /* PendingHistoryTableViewCell.swift */,
+				8499D18226716B9000A32BDF /* PendingHistoryTableViewCell.xib */,
+				8499D17726716B8F00A32BDF /* TimelineTableViewCell.swift */,
+				8499D18626716B9000A32BDF /* TimelineTableViewCell.xib */,
+				8499D18726716B9000A32BDF /* NotificationTableViewCell.swift */,
+				8499D17526716B8F00A32BDF /* NotificationTableViewCell.xib */,
+				8499D18326716B9000A32BDF /* UserTableViewCell.swift */,
+				8499D18926716B9000A32BDF /* UserTableViewCell.xib */,
+				8499D18A26716B9000A32BDF /* MessageTableViewCell.swift */,
+				8499D18E26716B9000A32BDF /* MessageTableViewCell.xib */,
+				8499D17626716B8F00A32BDF /* BookmarkTableViewCell.swift */,
+				8499D18B26716B9000A32BDF /* BookmarkTableViewCell.xib */,
+				8499D18526716B9000A32BDF /* ReceivedMusicTableViewCell.swift */,
+				8499D18026716B9000A32BDF /* SentMessageTableViewCell.swift */,
+				8499D17A26716B8F00A32BDF /* ReceivedMessageTableViewCell.swift */,
+				8499D17D26716B9000A32BDF /* SentMusicTableViewCell.swift */,
+				8499D18826716B9000A32BDF /* IndicatorTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		9E10FBE723F6E81200A154F1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				84169D8D2683E8900037A103 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9E63F56523E21836003D69FB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9E24738423E368E6000FA486 /* Services.swift */,
+				9E24737823E3250C000FA486 /* AccountServices.swift */,
+				9E63F56623E21847003D69FB /* AuthServices.swift */,
+				9EFD231823E85E89008F8937 /* ContentServices.swift */,
+				9EE98875240C7030008A7445 /* PartyServices.swift */,
+				9EC669DA2469D0F2001E13DF /* UserActionServices.swift */,
+				9ECF394B251256BB005D8DAE /* BookmarkServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9E63F56823E2197F003D69FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9EE98877240C705A008A7445 /* Party */,
+				9ECD167623FC22FD0095DD23 /* Service */,
+				9E9EB87423F48E7900CEE805 /* UserHistory */,
+				9E78EE7823F3171600308A63 /* Content */,
+				9EA8490723E490BC005515AD /* Paging */,
+				9E63F56923E2199C003D69FB /* Token.swift */,
+				9E24737C23E327DB000FA486 /* Profile.swift */,
+				9E24738223E36845000FA486 /* LotusError.swift */,
+				9E2184DE23F59A2500D13DAD /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9E76E40723BE6A99005E29BE = {
+			isa = PBXGroup;
+			children = (
+				9E76E41223BE6A99005E29BE /* lotus */,
+				9E76E41123BE6A99005E29BE /* Products */,
+				6513C01A7201F21B422753C5 /* Pods */,
+				5F6230DFAF3BBD3636C3491C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9E76E41123BE6A99005E29BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E76E41023BE6A99005E29BE /* lotus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E76E41223BE6A99005E29BE /* lotus */ = {
+			isa = PBXGroup;
+			children = (
+				9E63F56823E2197F003D69FB /* Models */,
+				9E63F56523E21836003D69FB /* Services */,
+				9E01641823DB451700A2F9D2 /* lotus.entitlements */,
+				9EC08A5F23C4C5B6009E7847 /* ViewControllers */,
+				9EE3582E23C3684000AD1E85 /* Util */,
+				9E76E42723BE6DDD005E29BE /* UI */,
+				9E76E41323BE6A99005E29BE /* AppDelegate.swift */,
+				84E8CFDB2644DE34005CE9A0 /* PushNotificationManager.swift */,
+				84E8CFDE26457C1D005CE9A0 /* PushNotificationSender.swift */,
+				9E76E41523BE6A99005E29BE /* SceneDelegate.swift */,
+				9E76E41C23BE6A9B005E29BE /* Assets.xcassets */,
+				9E76E41E23BE6A9B005E29BE /* LaunchScreen.storyboard */,
+				9E76E42123BE6A9B005E29BE /* Info.plist */,
+				84137FB326448C2F007C9E00 /* GoogleService-Info.plist */,
+				9EE3583123C37CAA00AD1E85 /* LotusTabBarController.swift */,
+				9EFD438D23E9EE9E00741B38 /* lotus-Bridging-Header.h */,
+			);
+			path = lotus;
+			sourceTree = "<group>";
+		};
+		9E76E42723BE6DDD005E29BE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8499D16826716B8F00A32BDF /* XIB */,
+				9EBEA4972417CEAC009D5866 /* Custom */,
+				9E10FBE723F6E81200A154F1 /* Storyboards */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9E78EE7823F3171600308A63 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				9EA8490323E48B40005515AD /* Content.swift */,
+				9E24737E23E3282E000FA486 /* Music.swift */,
+				9EF9110D24194D0200E3774B /* SpotifyPlayResponse.swift */,
+				9EC669DC2469D135001E13DF /* Album.swift */,
+				9EC669DE2469D3A9001E13DF /* Artist.swift */,
+				9ECF394D25125B06005D8DAE /* Bookmark.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		9E9EB87423F48E7900CEE805 /* UserHistory */ = {
+			isa = PBXGroup;
+			children = (
+				9E78EE7923F31B0800308A63 /* UserHistory.swift */,
+				9E9EB87523F48E8600CEE805 /* Comment.swift */,
+				9E70482323FF17410014433E /* UserCurrent.swift */,
+				9EA35E24240845B300A245A4 /* TimelineHistory.swift */,
+				9EBEA4A22418253C009D5866 /* LotusNotification.swift */,
+			);
+			path = UserHistory;
+			sourceTree = "<group>";
+		};
+		9EA8490723E490BC005515AD /* Paging */ = {
+			isa = PBXGroup;
+			children = (
+				9EA8490523E48F7F005515AD /* PagedContent.swift */,
+				9EA8490823E490C9005515AD /* Sort.swift */,
+				9EA8490A23E490E3005515AD /* Pageable.swift */,
+			);
+			path = Paging;
+			sourceTree = "<group>";
+		};
+		9EBEA4972417CEAC009D5866 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				9EBEA4982417CEBD009D5866 /* OutlineButton.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		9EC08A5F23C4C5B6009E7847 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8491B6C5261E92CE00EA6295 /* SendBirdInterface */,
+				9E76E41723BE6A99005E29BE /* TimelineViewController.swift */,
+				9EE3584123C39FF600AD1E85 /* ProfileViewController.swift */,
+				84169D92268583E80037A103 /* ProfileEditViewController.swift */,
+				9EEED27123C6245F00DDD727 /* SettingsViewController.swift */,
+				9E01641623DB41FE00A2F9D2 /* LoginViewController.swift */,
+				8433AA0226BCCC6500C4DDD9 /* SignupViewController.swift */,
+				9E2184D623F586BC00D13DAD /* HistoryCommentViewController.swift */,
+				9E10FBE023F6E22F00A154F1 /* FollowListViewController.swift */,
+				9E10FBE823F7027200A154F1 /* SearchUsersViewController.swift */,
+				9EC5743323F8B3A400E52A78 /* SearchMusicViewController.swift */,
+				9E32B878240027C6001FF6CE /* MusicPlayerViewController.swift */,
+				9ED2FA93241AB5360003181D /* HistoryViewController.swift */,
+				84E7D09C25F7304500EC8CF3 /* WebViewController.swift */,
+				9E2E7A572406FE9B0071672B /* MessagingViewController.swift */,
+				8414041026166DE500C9A2A6 /* ChatViewController.swift */,
+				848421792620CA8A008EDDF4 /* CreateChannelViewController.swift */,
+				84D386B0262A135C003838DE /* SendMusicViewController.swift */,
+				848DF26A264ED66A0097C01A /* ChoosePeoplesViewController.swift */,
+				84EC4C122691133D0014214E /* WebContentViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9ECD167623FC22FD0095DD23 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9ECD167723FC231B0095DD23 /* SpotifyToken.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9EE3582E23C3684000AD1E85 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3582F23C3685300AD1E85 /* ColorUtil.swift */,
+				8491B6DD261E967200EA6295 /* Store.swift */,
+				9E63F56123E20D5B003D69FB /* ServerConstants.swift */,
+				9E63F56323E214E1003D69FB /* Extensions.swift */,
+				8491B6E0261E996100EA6295 /* DateExtension.swift */,
+				9E24737A23E325FE000FA486 /* Globals.swift */,
+				9E2184D823F5872600D13DAD /* StoryboardConstants.swift */,
+				9ED15B6D23FADDEB006F3E14 /* AppleMusicPlayer.swift */,
+				9ECD167923FC27F10095DD23 /* MusicPlayer.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		9EE98877240C705A008A7445 /* Party */ = {
+			isa = PBXGroup;
+			children = (
+				9EE98878240C7066008A7445 /* Party.swift */,
+			);
+			path = Party;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E76E40F23BE6A99005E29BE /* lotus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E76E42423BE6A9B005E29BE /* Build configuration list for PBXNativeTarget "lotus" */;
+			buildPhases = (
+				9420438116065DE295F45548 /* [CP] Check Pods Manifest.lock */,
+				9E76E40C23BE6A99005E29BE /* Sources */,
+				9E76E40D23BE6A99005E29BE /* Frameworks */,
+				9E76E40E23BE6A99005E29BE /* Resources */,
+				3E27A75E11AEF069A1F1C33F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lotus;
+			productName = lotus;
+			productReference = 9E76E41023BE6A99005E29BE /* lotus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E76E40823BE6A99005E29BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Seisan;
+				TargetAttributes = {
+					9E76E40F23BE6A99005E29BE = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9E76E40B23BE6A99005E29BE /* Build configuration list for PBXProject "lotus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E76E40723BE6A99005E29BE;
+			productRefGroup = 9E76E41123BE6A99005E29BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E76E40F23BE6A99005E29BE /* lotus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E76E40E23BE6A99005E29BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E76E42023BE6A9B005E29BE /* LaunchScreen.storyboard in Resources */,
+				8499D1BE26716B9000A32BDF /* MusicTableViewCell.xib in Resources */,
+				8499D1D726716B9000A32BDF /* BookmarkView.xib in Resources */,
+				9E76E41D23BE6A9B005E29BE /* Assets.xcassets in Resources */,
+				8499D1B926716B9000A32BDF /* CompactMusicTableViewCell.xib in Resources */,
+				8499D1A626716B9000A32BDF /* MessageTableViewHeader.xib in Resources */,
+				8499D1E426716EBD00A32BDF /* CurrentlyListeningView.xib in Resources */,
+				8499D1D526716B9000A32BDF /* TimelineView.xib in Resources */,
+				8499D1C826716B9000A32BDF /* MessageTableViewCell.xib in Resources */,
+				8499D1A726716B9000A32BDF /* HistoryView.xib in Resources */,
+				8499D1CD26716B9000A32BDF /* MusicView.xib in Resources */,
+				8499D1C026716B9000A32BDF /* TimelineTableViewCell.xib in Resources */,
+				8499D1C326716B9000A32BDF /* UserTableViewCell.xib in Resources */,
+				8499D1CB26716B9000A32BDF /* AlbumView.xib in Resources */,
+				84137FB426448C30007C9E00 /* GoogleService-Info.plist in Resources */,
+				8499D1B526716B9000A32BDF /* HistoryCommentTableViewCell.xib in Resources */,
+				8499D1AD26716B9000A32BDF /* NotificationsTableViewHeader.xib in Resources */,
+				8499D1CE26716B9000A32BDF /* PendingHistoryView.xib in Resources */,
+				8499D1C726716B9000A32BDF /* PendingHistoryCompactTableViewCell.xib in Resources */,
+				8499D1DA26716B9000A32BDF /* OrView.xib in Resources */,
+				8499D1A826716B9000A32BDF /* HeaderView.xib in Resources */,
+				8499D1D326716B9000A32BDF /* SmallPlayerView.xib in Resources */,
+				8499D1C526716B9000A32BDF /* BookmarkTableViewCell.xib in Resources */,
+				8499D1D426716B9000A32BDF /* TableHeaderSearchView.xib in Resources */,
+				8499D1BB26716B9000A32BDF /* TimelineMusicTableViewCell.xib in Resources */,
+				8499D1BC26716B9000A32BDF /* PendingHistoryTableViewCell.xib in Resources */,
+				8499D1DC26716B9000A32BDF /* MusicTableViewHeader.xib in Resources */,
+				8499D1D926716B9000A32BDF /* ArtistView.xib in Resources */,
+				8499D1AF26716B9000A32BDF /* NotificationTableViewCell.xib in Resources */,
+				84169D8F2683E8900037A103 /* Main.storyboard in Resources */,
+				8499D1D826716B9000A32BDF /* ListeningToView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E27A75E11AEF069A1F1C33F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lotus/Pods-lotus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lotus/Pods-lotus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lotus/Pods-lotus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9420438116065DE295F45548 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lotus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E76E40C23BE6A99005E29BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8499D1D226716B9000A32BDF /* ArtistView.swift in Sources */,
+				9ECF394E25125B06005D8DAE /* Bookmark.swift in Sources */,
+				9E24737923E3250C000FA486 /* AccountServices.swift in Sources */,
+				8499D1BD26716B9000A32BDF /* UserTableViewCell.swift in Sources */,
+				848DF26B264ED66A0097C01A /* ChoosePeoplesViewController.swift in Sources */,
+				84D386B1262A135C003838DE /* SendMusicViewController.swift in Sources */,
+				8491B6DE261E967200EA6295 /* Store.swift in Sources */,
+				8499D1D626716B9000A32BDF /* HistoryView.swift in Sources */,
+				9EA8490923E490C9005515AD /* Sort.swift in Sources */,
+				8499D1DD26716B9000A32BDF /* SmallPlayerView.swift in Sources */,
+				9E10FBE923F7027200A154F1 /* SearchUsersViewController.swift in Sources */,
+				9E32B879240027C6001FF6CE /* MusicPlayerViewController.swift in Sources */,
+				8499D1A526716B9000A32BDF /* MessageTableViewHeader.swift in Sources */,
+				9E24738523E368E6000FA486 /* Services.swift in Sources */,
+				8499D1C426716B9000A32BDF /* MessageTableViewCell.swift in Sources */,
+				9E76E41823BE6A99005E29BE /* TimelineViewController.swift in Sources */,
+				9E24737B23E325FE000FA486 /* Globals.swift in Sources */,
+				8499D1CC26716B9000A32BDF /* ListeningToView.swift in Sources */,
+				8499D1C126716B9000A32BDF /* NotificationTableViewCell.swift in Sources */,
+				9EE98876240C7030008A7445 /* PartyServices.swift in Sources */,
+				84E8CFDF26457C1D005CE9A0 /* PushNotificationSender.swift in Sources */,
+				9EEED27223C6245F00DDD727 /* SettingsViewController.swift in Sources */,
+				84E7D09D25F7304500EC8CF3 /* WebViewController.swift in Sources */,
+				9EA8490423E48B40005515AD /* Content.swift in Sources */,
+				8414041126166DE500C9A2A6 /* ChatViewController.swift in Sources */,
+				9EF9110E24194D0200E3774B /* SpotifyPlayResponse.swift in Sources */,
+				8499D1C926716B9000A32BDF /* AlbumView.swift in Sources */,
+				8499D1E126716EA200A32BDF /* CurrentlyListeningView.swift in Sources */,
+				9E2E7A582406FE9B0071672B /* MessagingViewController.swift in Sources */,
+				8499D1AB26716B9000A32BDF /* CustomNibView.swift in Sources */,
+				84169D93268583F70037A103 /* ProfileEditViewController.swift in Sources */,
+				8499D1C226716B9000A32BDF /* IndicatorTableViewCell.swift in Sources */,
+				9E76E41423BE6A99005E29BE /* AppDelegate.swift in Sources */,
+				9E24737D23E327DB000FA486 /* Profile.swift in Sources */,
+				9E76E41623BE6A99005E29BE /* SceneDelegate.swift in Sources */,
+				9E10FBE123F6E22F00A154F1 /* FollowListViewController.swift in Sources */,
+				8499D1B826716B9000A32BDF /* PendingHistoryCompactTableViewCell.swift in Sources */,
+				8499D1B226716B9000A32BDF /* MusicTableViewCell.swift in Sources */,
+				8499D1DB26716B9000A32BDF /* PendingHistoryView.swift in Sources */,
+				9EC669DF2469D3A9001E13DF /* Artist.swift in Sources */,
+				8491B6C9261E92CF00EA6295 /* SendBirdInterface.swift in Sources */,
+				9ED15B6E23FADDEB006F3E14 /* AppleMusicPlayer.swift in Sources */,
+				8433AA0326BCCC6600C4DDD9 /* SignupViewController.swift in Sources */,
+				9E24738323E36845000FA486 /* LotusError.swift in Sources */,
+				8491B6C8261E92CF00EA6295 /* TimeConvertor.swift in Sources */,
+				84E8CFDC2644DE34005CE9A0 /* PushNotificationManager.swift in Sources */,
+				8499D1BF26716B9000A32BDF /* ReceivedMusicTableViewCell.swift in Sources */,
+				8499D1B126716B9000A32BDF /* TimelineTableViewCell.swift in Sources */,
+				8499D1A426716B9000A32BDF /* NotificationsTableViewHeader.swift in Sources */,
+				8499D1AE26716B9000A32BDF /* PendingHistoryTableViewCell.swift in Sources */,
+				8499D1B726716B9000A32BDF /* SentMusicTableViewCell.swift in Sources */,
+				9E63F56A23E2199C003D69FB /* Token.swift in Sources */,
+				8499D1B426716B9000A32BDF /* ReceivedMessageTableViewCell.swift in Sources */,
+				8499D1C626716B9000A32BDF /* HistoryCommentTableViewCell.swift in Sources */,
+				9E2184D723F586BC00D13DAD /* HistoryCommentViewController.swift in Sources */,
+				8499D1B026716B9000A32BDF /* BookmarkTableViewCell.swift in Sources */,
+				8499D1D026716B9000A32BDF /* HeaderView.swift in Sources */,
+				9EE98879240C7066008A7445 /* Party.swift in Sources */,
+				9EE3583223C37CAA00AD1E85 /* LotusTabBarController.swift in Sources */,
+				8499D1AC26716B9000A32BDF /* MusicTableViewHeader.swift in Sources */,
+				9EE3584223C39FF600AD1E85 /* ProfileViewController.swift in Sources */,
+				8499D1CA26716B9000A32BDF /* TableHeaderSearchView.swift in Sources */,
+				84EC4C132691133D0014214E /* WebContentViewController.swift in Sources */,
+				8499D1B626716B9000A32BDF /* CompactMusicTableViewCell.swift in Sources */,
+				9ECF394C251256BB005D8DAE /* BookmarkServices.swift in Sources */,
+				9E63F56423E214E1003D69FB /* Extensions.swift in Sources */,
+				9EA8490623E48F7F005515AD /* PagedContent.swift in Sources */,
+				8499D1CF26716B9000A32BDF /* MusicView.swift in Sources */,
+				9EBEA4992417CEBD009D5866 /* OutlineButton.swift in Sources */,
+				9E63F56723E21847003D69FB /* AuthServices.swift in Sources */,
+				9EFD231923E85E89008F8937 /* ContentServices.swift in Sources */,
+				9E2184DF23F59A2500D13DAD /* User.swift in Sources */,
+				9E24737F23E3282E000FA486 /* Music.swift in Sources */,
+				9EC5743423F8B3A400E52A78 /* SearchMusicViewController.swift in Sources */,
+				9E63F56223E20D5B003D69FB /* ServerConstants.swift in Sources */,
+				9EC669DD2469D135001E13DF /* Album.swift in Sources */,
+				9ECD167A23FC27F10095DD23 /* MusicPlayer.swift in Sources */,
+				9EA35E25240845B300A245A4 /* TimelineHistory.swift in Sources */,
+				8499D1BA26716B9000A32BDF /* SentMessageTableViewCell.swift in Sources */,
+				8499D1D126716B9000A32BDF /* TimelineView.swift in Sources */,
+				9ECD167823FC231B0095DD23 /* SpotifyToken.swift in Sources */,
+				9EE3583023C3685300AD1E85 /* ColorUtil.swift in Sources */,
+				9E70482423FF17410014433E /* UserCurrent.swift in Sources */,
+				9EC669DB2469D0F2001E13DF /* UserActionServices.swift in Sources */,
+				8499D1B326716B9000A32BDF /* TimelineMusicTableViewCell.swift in Sources */,
+				9E2184D923F5872600D13DAD /* StoryboardConstants.swift in Sources */,
+				9E9EB87623F48E8600CEE805 /* Comment.swift in Sources */,
+				9ED2FA94241AB5360003181D /* HistoryViewController.swift in Sources */,
+				9EBEA4A32418253C009D5866 /* LotusNotification.swift in Sources */,
+				9EA8490B23E490E3005515AD /* Pageable.swift in Sources */,
+				8484217A2620CA8B008EDDF4 /* CreateChannelViewController.swift in Sources */,
+				8499D1A926716B9000A32BDF /* OrView.swift in Sources */,
+				9E01641723DB41FE00A2F9D2 /* LoginViewController.swift in Sources */,
+				8491B6E1261E996100EA6295 /* DateExtension.swift in Sources */,
+				8499D1AA26716B9000A32BDF /* BookmarkView.swift in Sources */,
+				9E78EE7A23F31B0800308A63 /* UserHistory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84169D8D2683E8900037A103 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84169D8E2683E8900037A103 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E76E41E23BE6A9B005E29BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E76E41F23BE6A9B005E29BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E76E42223BE6A9B005E29BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9E76E42323BE6A9B005E29BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E76E42523BE6A9B005E29BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB63D127C22DF1E53DC0A86B /* Pods-lotus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = lotus/lotus.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
+				DEVELOPMENT_TEAM = 65SG2K9N2X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = lotus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"z\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-framework",
+					"\"FBSDKShareKit\"",
+					"-framework",
+					"\"FacebookCore\"",
+					"-framework",
+					"\"FacebookLogin\"",
+					"-framework",
+					"\"FacebookShare\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"AudioToolbox\"",
+					"-weak_framework",
+					"\"CoreGraphics\"",
+					"-weak_framework",
+					"\"CoreLocation\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"QuartzCore\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-weak_framework",
+					"\"UIKit\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lotusapp.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "lotus-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E76E42623BE6A9B005E29BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74D32C14EEF1B01AAFA05843 /* Pods-lotus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = lotus/lotus.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 34;
+				DEVELOPMENT_TEAM = 65SG2K9N2X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = lotus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"z\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-framework",
+					"\"FBSDKShareKit\"",
+					"-framework",
+					"\"FacebookCore\"",
+					"-framework",
+					"\"FacebookLogin\"",
+					"-framework",
+					"\"FacebookShare\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"AudioToolbox\"",
+					"-weak_framework",
+					"\"CoreGraphics\"",
+					"-weak_framework",
+					"\"CoreLocation\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"QuartzCore\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-weak_framework",
+					"\"UIKit\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lotusapp.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "lotus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E76E40B23BE6A99005E29BE /* Build configuration list for PBXProject "lotus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E76E42223BE6A9B005E29BE /* Debug */,
+				9E76E42323BE6A9B005E29BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E76E42423BE6A9B005E29BE /* Build configuration list for PBXNativeTarget "lotus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E76E42523BE6A9B005E29BE /* Debug */,
+				9E76E42623BE6A9B005E29BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E76E40823BE6A99005E29BE /* Project object */;
+}

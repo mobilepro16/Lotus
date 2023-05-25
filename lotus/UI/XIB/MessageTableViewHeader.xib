@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageTableViewHeader" customModule="lotus" customModuleProvider="target">
+            <connections>
+                <outlet property="constraint_stackView_height" destination="GeB-l1-CRw" id="Lzi-bi-vDY"/>
+                <outlet property="createButton" destination="SGu-aW-BAf" id="CtS-QC-qHO"/>
+                <outlet property="headerTitle" destination="qSp-T1-3IZ" id="UdR-cy-dNe"/>
+                <outlet property="notificationsTab" destination="nro-Ep-a6w" id="kcb-XK-vrz"/>
+                <outlet property="partiesTab" destination="Q8q-GS-GCx" id="9S4-wd-cpV"/>
+                <outlet property="searchView" destination="UbN-JM-y2W" id="up5-5E-DzQ"/>
+                <outlet property="tabStackView" destination="Hn6-TE-RDR" id="Ka7-L6-QkN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="612" height="173"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UbN-JM-y2W" customClass="TableHeaderSearchView" customModule="lotus" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="40" width="564" height="72"/>
+                    <color key="backgroundColor" red="0.44705882352941173" green="0.44705882352941173" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="4JH-AP-cna"/>
+                        <constraint firstAttribute="width" constant="542" id="kVe-jt-wnj"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="kVe-jt-wnj"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jlw-Dq-ayu" userLabel="hr">
+                    <rect key="frame" x="0.0" y="112" width="612" height="0.5"/>
+                    <color key="backgroundColor" name="lotusHR"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.25" id="QI8-E2-ddr"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Hn6-TE-RDR">
+                    <rect key="frame" x="8" y="120.5" width="596" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nro-Ep-a6w">
+                            <rect key="frame" x="0.0" y="0.0" width="298" height="30"/>
+                            <state key="normal" title="NOTIFICATIONS"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8q-GS-GCx">
+                            <rect key="frame" x="298" y="0.0" width="298" height="30"/>
+                            <state key="normal" title="PARTIES"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="GeB-l1-CRw"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3IL-eh-NId">
+                    <rect key="frame" x="0.0" y="0.0" width="612" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSp-T1-3IZ">
+                            <rect key="frame" x="23" y="16.5" width="133.5" height="33.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9bG-Gs-G8u"/>
+                        <constraint firstItem="qSp-T1-3IZ" firstAttribute="leading" secondItem="3IL-eh-NId" secondAttribute="leading" constant="23" id="DHT-VL-6Gx"/>
+                        <constraint firstAttribute="bottom" secondItem="qSp-T1-3IZ" secondAttribute="bottom" constant="-10" id="EEz-lf-NDx"/>
+                        <constraint firstAttribute="height" constant="40" id="dm5-d1-Bom"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="dm5-d1-Bom"/>
+                        </mask>
+                    </variation>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGu-aW-BAf">
+                    <rect key="frame" x="564" y="52.5" width="32" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="YOp-Zp-hQ4"/>
+                        <constraint firstAttribute="width" constant="32" id="x9W-3W-ecz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <state key="normal" image="circle">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="createTapped:" destination="-1" eventType="touchUpInside" id="CjW-Cm-Xtf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="lotusBackground"/>
+            <constraints>
+                <constraint firstItem="UbN-JM-y2W" firstAttribute="top" secondItem="3IL-eh-NId" secondAttribute="bottom" id="0ci-Qx-url"/>
+                <constraint firstItem="Hn6-TE-RDR" firstAttribute="top" secondItem="Jlw-Dq-ayu" secondAttribute="bottom" constant="8" id="1nk-rV-ICW"/>
+                <constraint firstItem="Jlw-Dq-ayu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6HG-co-dgw"/>
+                <constraint firstItem="SGu-aW-BAf" firstAttribute="leading" secondItem="UbN-JM-y2W" secondAttribute="trailing" constant="15" id="FRV-rQ-Y7k"/>
+                <constraint firstItem="UbN-JM-y2W" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FzM-wi-NLl"/>
+                <constraint firstItem="SGu-aW-BAf" firstAttribute="centerY" secondItem="UbN-JM-y2W" secondAttribute="centerY" constant="-4" id="IzE-Qf-Dh2"/>
+                <constraint firstItem="3IL-eh-NId" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="N6y-Rf-MlJ"/>
+                <constraint firstItem="3IL-eh-NId" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Tpp-ZU-8Mk"/>
+                <constraint firstItem="Jlw-Dq-ayu" firstAttribute="top" secondItem="UbN-JM-y2W" secondAttribute="bottom" id="U2C-LE-Ekl"/>
+                <constraint firstItem="UbN-JM-y2W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VPY-SZ-Ll8"/>
+                <constraint firstAttribute="bottom" secondItem="Hn6-TE-RDR" secondAttribute="bottom" constant="1" id="XnP-ae-haJ"/>
+                <constraint firstItem="3IL-eh-NId" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Z9U-qS-sNn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Jlw-Dq-ayu" secondAttribute="trailing" id="agn-zr-ZMb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SGu-aW-BAf" secondAttribute="trailing" constant="16" id="agr-ap-wn6"/>
+                <constraint firstItem="UbN-JM-y2W" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dEl-et-Wuh"/>
+                <constraint firstItem="SGu-aW-BAf" firstAttribute="leading" secondItem="UbN-JM-y2W" secondAttribute="trailing" id="emZ-eV-w8h"/>
+                <constraint firstItem="Hn6-TE-RDR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="lNz-Po-0gt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UbN-JM-y2W" secondAttribute="trailing" id="ufP-3T-Ir3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Hn6-TE-RDR" secondAttribute="trailing" constant="8" id="y3h-fW-tbI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ufP-3T-Ir3"/>
+                    <exclude reference="FzM-wi-NLl"/>
+                    <exclude reference="VPY-SZ-Ll8"/>
+                    <exclude reference="FRV-rQ-Y7k"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="260.86956521739131" y="-81.361607142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="circle" width="35.5" height="43.5"/>
+        <namedColor name="lotusBackground">
+            <color red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lotusHR">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

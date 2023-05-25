@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="607" height="77"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XKH-lh-VzK">
+                    <rect key="frame" x="0.0" y="38" width="293" height="1"/>
+                    <color key="backgroundColor" name="lotusTabUnselected"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="A8Q-iV-GrW"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jwq-mR-Om3">
+                    <rect key="frame" x="297" y="30" width="13.5" height="17"/>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                    <color key="textColor" name="lotusTabUnselected"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4N-Bf-eJG">
+                    <rect key="frame" x="314.5" y="38" width="292.5" height="1"/>
+                    <viewLayoutGuide key="safeArea" id="JBl-DS-eRv"/>
+                    <color key="backgroundColor" name="lotusTabUnselected"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Btl-th-xIj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Jwq-mR-Om3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7Av-Tl-7ek"/>
+                <constraint firstItem="n4N-Bf-eJG" firstAttribute="centerY" secondItem="Jwq-mR-Om3" secondAttribute="centerY" id="9j9-kA-okG"/>
+                <constraint firstItem="Jwq-mR-Om3" firstAttribute="leading" secondItem="XKH-lh-VzK" secondAttribute="trailing" constant="4" id="HPO-lT-K7E"/>
+                <constraint firstAttribute="trailing" secondItem="n4N-Bf-eJG" secondAttribute="trailing" id="MA6-cF-9f6"/>
+                <constraint firstItem="XKH-lh-VzK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QKf-GI-dBa"/>
+                <constraint firstItem="Jwq-mR-Om3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="m8g-UB-iWH"/>
+                <constraint firstItem="XKH-lh-VzK" firstAttribute="centerY" secondItem="Jwq-mR-Om3" secondAttribute="centerY" id="sXO-aR-xXz"/>
+                <constraint firstItem="n4N-Bf-eJG" firstAttribute="leading" secondItem="Jwq-mR-Om3" secondAttribute="trailing" constant="4" id="tSS-aE-mSF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="271.73913043478262" y="-184.48660714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="lotusTabUnselected">
+            <color red="0.21568627450980393" green="0.56470588235294117" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

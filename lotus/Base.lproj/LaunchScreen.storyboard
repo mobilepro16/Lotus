@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="1V1-rW-RDY">
+                                <rect key="frame" x="-10" y="-10" width="434" height="916"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_app" translatesAutoresizingMaskIntoConstraints="NO" id="nvW-CZ-3Rx">
+                                <rect key="frame" x="152.5" y="264" width="109" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="LhD-bj-Qe2"/>
+                                    <constraint firstAttribute="height" constant="67" id="u3u-Tf-fCq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1V1-rW-RDY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="10" id="Nau-Y1-cNB"/>
+                            <constraint firstAttribute="bottom" secondItem="1V1-rW-RDY" secondAttribute="bottom" constant="-10" id="SaR-g8-B3L"/>
+                            <constraint firstItem="1V1-rW-RDY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-10" id="one-My-C9m"/>
+                            <constraint firstItem="nvW-CZ-3Rx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="220" id="qYW-WV-Be0"/>
+                            <constraint firstItem="1V1-rW-RDY" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-10" id="svM-WF-RuZ"/>
+                            <constraint firstItem="nvW-CZ-3Rx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xCV-bt-eWh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="414" height="896"/>
+        <image name="icon_app" width="109" height="67"/>
+    </resources>
+</document>

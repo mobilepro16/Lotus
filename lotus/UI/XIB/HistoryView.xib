@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoryView" customModule="lotus" customModuleProvider="target">
+            <connections>
+                <outlet property="bookmarkButton" destination="PBu-u9-HlX" id="PuB-NU-eIS"/>
+                <outlet property="commentLabel" destination="OIo-HP-we5" id="lSi-U9-6m5"/>
+                <outlet property="commentsButton" destination="ZIU-XM-Dsa" id="6kr-TV-SVK"/>
+                <outlet property="favoritesButton" destination="Qki-t6-y7a" id="j1Q-P6-C2x"/>
+                <outlet property="musicView" destination="dQZ-Tg-F7o" id="WCQ-yR-EpN"/>
+                <outlet property="profileDisplayNameLabel" destination="3CP-2F-mmK" id="kew-ZA-X1Z"/>
+                <outlet property="profileImage" destination="CSd-gI-l4w" id="UMY-q3-EDw"/>
+                <outlet property="profileNameLabel" destination="EM8-ht-IPW" id="bBw-2f-ld5"/>
+                <outlet property="sharesButton" destination="6a3-00-yLQ" id="2N2-dB-4oW"/>
+                <outlet property="timestampLabel" destination="uut-kO-fdo" id="HOv-th-NaM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="748" height="648"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qp2-qP-h0G">
+                    <rect key="frame" x="20" y="228" width="708" height="329"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIo-HP-we5">
+                            <rect key="frame" x="0.0" y="0.0" width="708" height="329"/>
+                            <string key="text">Did you know that this song is about how they lived away from everyone else in their own rich neighborhood because of staying in hotels</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="lotusBackground"/>
+                    <constraints>
+                        <constraint firstItem="OIo-HP-we5" firstAttribute="top" secondItem="Qp2-qP-h0G" secondAttribute="top" id="Pad-sR-shn"/>
+                        <constraint firstItem="OIo-HP-we5" firstAttribute="leading" secondItem="Qp2-qP-h0G" secondAttribute="leading" id="c9c-GA-kKv"/>
+                        <constraint firstAttribute="bottom" secondItem="OIo-HP-we5" secondAttribute="bottom" id="g8d-XE-DcC"/>
+                        <constraint firstAttribute="trailing" secondItem="OIo-HP-we5" secondAttribute="trailing" id="psY-vo-d0P"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="czb-Cn-ahS" userLabel="hr">
+                    <rect key="frame" x="0.0" y="613" width="748" height="1"/>
+                    <color key="backgroundColor" name="lotusHR"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="MIc-VX-eKP"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fake-user" translatesAutoresizingMaskIntoConstraints="NO" id="CSd-gI-l4w">
+                    <rect key="frame" x="20" y="20" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="NUk-3N-Q7w"/>
+                        <constraint firstAttribute="height" constant="40" id="zhu-tL-Ofp"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9Sd-L5-qAg">
+                    <rect key="frame" x="20" y="565" width="708" height="40"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xly-d3-wmd">
+                            <rect key="frame" x="0.0" y="0.0" width="141.5" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qki-t6-y7a">
+                                    <rect key="frame" x="0.0" y="0.0" width="141.5" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="2" image="icon_fave">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="likesClick:" destination="-1" eventType="touchUpInside" id="6fd-gW-1um"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="lotusBackground"/>
+                            <constraints>
+                                <constraint firstItem="Qki-t6-y7a" firstAttribute="leading" secondItem="Xly-d3-wmd" secondAttribute="leading" id="AX7-xb-NV7"/>
+                                <constraint firstAttribute="bottom" secondItem="Qki-t6-y7a" secondAttribute="bottom" id="Nqd-nc-EZs"/>
+                                <constraint firstItem="Qki-t6-y7a" firstAttribute="centerY" secondItem="Xly-d3-wmd" secondAttribute="centerY" id="YvG-VC-FeB"/>
+                                <constraint firstItem="Qki-t6-y7a" firstAttribute="top" secondItem="Xly-d3-wmd" secondAttribute="top" id="t35-G3-hJl"/>
+                                <constraint firstAttribute="trailing" secondItem="Qki-t6-y7a" secondAttribute="trailing" id="ubS-LD-T1H"/>
+                                <constraint firstItem="Qki-t6-y7a" firstAttribute="centerX" secondItem="Xly-d3-wmd" secondAttribute="centerX" id="vAq-12-XOL"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I8c-bS-S7T">
+                            <rect key="frame" x="141.5" y="0.0" width="141.5" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIU-XM-Dsa">
+                                    <rect key="frame" x="0.0" y="0.0" width="141.5" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" image="icon_chat">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="commentsClick:" destination="-1" eventType="touchUpInside" id="lpJ-lO-Pwc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="lotusBackground"/>
+                            <constraints>
+                                <constraint firstItem="ZIU-XM-Dsa" firstAttribute="centerY" secondItem="I8c-bS-S7T" secondAttribute="centerY" id="4aB-FB-689"/>
+                                <constraint firstAttribute="trailing" secondItem="ZIU-XM-Dsa" secondAttribute="trailing" id="8Of-Mh-Cro"/>
+                                <constraint firstAttribute="bottom" secondItem="ZIU-XM-Dsa" secondAttribute="bottom" id="H0L-ce-V2J"/>
+                                <constraint firstItem="ZIU-XM-Dsa" firstAttribute="top" secondItem="I8c-bS-S7T" secondAttribute="top" id="IhS-29-aR0"/>
+                                <constraint firstItem="ZIU-XM-Dsa" firstAttribute="leading" secondItem="I8c-bS-S7T" secondAttribute="leading" id="Jbc-5e-gUL"/>
+                                <constraint firstItem="ZIU-XM-Dsa" firstAttribute="centerX" secondItem="I8c-bS-S7T" secondAttribute="centerX" id="fJq-GV-6Sm"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJe-Wn-gua">
+                            <rect key="frame" x="283" y="0.0" width="142" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6a3-00-yLQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="142" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <state key="normal" image="post">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="shareClick:" destination="-1" eventType="touchUpInside" id="HdY-Oa-ARs"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="lotusBackground"/>
+                            <constraints>
+                                <constraint firstItem="6a3-00-yLQ" firstAttribute="centerY" secondItem="NJe-Wn-gua" secondAttribute="centerY" id="6BB-93-NDU"/>
+                                <constraint firstItem="6a3-00-yLQ" firstAttribute="centerX" secondItem="NJe-Wn-gua" secondAttribute="centerX" id="Oce-Q1-eqB"/>
+                                <constraint firstAttribute="bottom" secondItem="6a3-00-yLQ" secondAttribute="bottom" id="dwf-2v-YPA"/>
+                                <constraint firstItem="6a3-00-yLQ" firstAttribute="top" secondItem="NJe-Wn-gua" secondAttribute="top" id="nbo-iC-nQs"/>
+                                <constraint firstItem="6a3-00-yLQ" firstAttribute="leading" secondItem="NJe-Wn-gua" secondAttribute="leading" id="oZx-HU-uHX"/>
+                                <constraint firstAttribute="trailing" secondItem="6a3-00-yLQ" secondAttribute="trailing" id="sHY-zw-5Lk"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIj-cy-gpW">
+                            <rect key="frame" x="425" y="0.0" width="141.5" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBu-u9-HlX">
+                                    <rect key="frame" x="0.0" y="0.0" width="141.5" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <state key="normal" image="icon_bookmark_inactive">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="bookmarkClick:" destination="-1" eventType="touchUpInside" id="GO6-zd-Ka2"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="lotusBackground"/>
+                            <constraints>
+                                <constraint firstItem="PBu-u9-HlX" firstAttribute="centerX" secondItem="fIj-cy-gpW" secondAttribute="centerX" id="0AK-Mc-Qbu"/>
+                                <constraint firstItem="PBu-u9-HlX" firstAttribute="leading" secondItem="fIj-cy-gpW" secondAttribute="leading" id="95I-Ed-dUM"/>
+                                <constraint firstAttribute="trailing" secondItem="PBu-u9-HlX" secondAttribute="trailing" id="Aer-nz-ajD"/>
+                                <constraint firstItem="PBu-u9-HlX" firstAttribute="top" secondItem="fIj-cy-gpW" secondAttribute="top" id="C9c-SM-hRI"/>
+                                <constraint firstAttribute="bottom" secondItem="PBu-u9-HlX" secondAttribute="bottom" id="Xy5-GG-VfN"/>
+                                <constraint firstItem="PBu-u9-HlX" firstAttribute="centerY" secondItem="fIj-cy-gpW" secondAttribute="centerY" id="vaF-jK-2p6"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddF-UX-YNt">
+                            <rect key="frame" x="566.5" y="0.0" width="141.5" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 hours ago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="uut-kO-fdo">
+                                    <rect key="frame" x="0.0" y="25.5" width="141.5" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" name="lotusBackground"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="uut-kO-fdo" secondAttribute="trailing" id="Urf-Jd-fxB"/>
+                                <constraint firstItem="uut-kO-fdo" firstAttribute="top" secondItem="ddF-UX-YNt" secondAttribute="top" id="j5L-vr-aZr"/>
+                                <constraint firstItem="uut-kO-fdo" firstAttribute="leading" secondItem="ddF-UX-YNt" secondAttribute="leading" id="oq1-rO-Fhn"/>
+                                <constraint firstAttribute="bottom" secondItem="uut-kO-fdo" secondAttribute="bottom" id="pan-H4-13f"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="j5L-vr-aZr"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="FuU-9y-vzi"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CP-2F-mmK">
+                    <rect key="frame" x="68" y="40" width="624" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" name="lotusGrayTextMuted"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHS-Ks-eEW">
+                    <rect key="frame" x="700" y="20" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="AWW-oh-J6I"/>
+                        <constraint firstAttribute="width" constant="40" id="Yof-kt-EEO"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="more"/>
+                    <connections>
+                        <action selector="menuClick:" destination="-1" eventType="touchUpInside" id="PKG-eb-zkP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Name is listening to" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EM8-ht-IPW">
+                    <rect key="frame" x="68" y="20" width="624" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQZ-Tg-F7o" customClass="MusicView" customModule="lotus" customModuleProvider="target">
+                    <rect key="frame" x="10" y="80" width="728" height="128"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="750" constant="128" id="3nT-U3-9YS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="lotusBackground"/>
+            <constraints>
+                <constraint firstItem="czb-Cn-ahS" firstAttribute="top" secondItem="9Sd-L5-qAg" secondAttribute="bottom" constant="8" id="1Vr-iU-VOl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dQZ-Tg-F7o" secondAttribute="trailing" constant="10" id="2M0-tx-BBe"/>
+                <constraint firstItem="3CP-2F-mmK" firstAttribute="leading" secondItem="CSd-gI-l4w" secondAttribute="trailing" constant="8" id="5jT-3j-aSj"/>
+                <constraint firstItem="3CP-2F-mmK" firstAttribute="top" secondItem="EM8-ht-IPW" secondAttribute="bottom" constant="2" id="8px-YM-V6p"/>
+                <constraint firstItem="CSd-gI-l4w" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="8rx-BP-dd0"/>
+                <constraint firstItem="dQZ-Tg-F7o" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="APL-6q-LPj"/>
+                <constraint firstItem="iHS-Ks-eEW" firstAttribute="leading" secondItem="3CP-2F-mmK" secondAttribute="trailing" constant="8" id="DZD-iY-LrX"/>
+                <constraint firstItem="czb-Cn-ahS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FcG-cs-yWE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9Sd-L5-qAg" secondAttribute="trailing" constant="20" id="IiL-ms-NSJ"/>
+                <constraint firstItem="EM8-ht-IPW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Jyf-54-4ld"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="czb-Cn-ahS" secondAttribute="bottom" id="Lwo-W1-wQU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Qp2-qP-h0G" secondAttribute="trailing" constant="20" id="Oi1-yB-eEl"/>
+                <constraint firstItem="Qp2-qP-h0G" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Ojo-Fg-Qhk"/>
+                <constraint firstItem="dQZ-Tg-F7o" firstAttribute="top" secondItem="CSd-gI-l4w" secondAttribute="bottom" constant="20" id="SUF-pH-D2E"/>
+                <constraint firstAttribute="trailing" secondItem="czb-Cn-ahS" secondAttribute="trailing" id="YHQ-Aj-ucw"/>
+                <constraint firstItem="iHS-Ks-eEW" firstAttribute="leading" secondItem="EM8-ht-IPW" secondAttribute="trailing" constant="8" id="Zvt-Fh-8VF"/>
+                <constraint firstItem="9Sd-L5-qAg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="gCy-iM-42M"/>
+                <constraint firstItem="9Sd-L5-qAg" firstAttribute="top" secondItem="Qp2-qP-h0G" secondAttribute="bottom" constant="8" id="iMg-EF-CD5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iHS-Ks-eEW" secondAttribute="trailing" constant="8" id="lyd-W1-wl7"/>
+                <constraint firstItem="Qp2-qP-h0G" firstAttribute="top" secondItem="dQZ-Tg-F7o" secondAttribute="bottom" constant="20" id="nI3-tI-RkU"/>
+                <constraint firstItem="iHS-Ks-eEW" firstAttribute="centerY" secondItem="CSd-gI-l4w" secondAttribute="centerY" id="oIL-Ty-dmD"/>
+                <constraint firstItem="EM8-ht-IPW" firstAttribute="leading" secondItem="CSd-gI-l4w" secondAttribute="trailing" constant="8" id="po0-pt-yV5"/>
+                <constraint firstItem="CSd-gI-l4w" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="sCA-pI-0BW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="373.91304347826087" y="-3.3482142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fake-user" width="445" height="445"/>
+        <image name="icon_bookmark_inactive" width="19" height="29.5"/>
+        <image name="icon_chat" width="25" height="24"/>
+        <image name="icon_fave" width="24" height="21"/>
+        <image name="more" width="21" height="29"/>
+        <image name="post" width="43" height="23"/>
+        <namedColor name="lotusBackground">
+            <color red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lotusGrayTextMuted">
+            <color red="0.43137254901960786" green="0.43137254901960786" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lotusHR">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

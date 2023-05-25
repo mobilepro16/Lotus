@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UserTableViewCell" rowHeight="66" id="KGk-i7-Jjw" customClass="UserTableViewCell" customModule="lotus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fake-user" translatesAutoresizingMaskIntoConstraints="NO" id="uRm-pI-tJY">
+                        <rect key="frame" x="12" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="750" constant="50" id="0dk-lO-b41"/>
+                            <constraint firstAttribute="width" constant="50" id="CIO-hG-fsH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qg-NR-hsC">
+                        <rect key="frame" x="70" y="8" width="247" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeM-rH-QbR">
+                        <rect key="frame" x="319" y="23" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="JXp-Wc-xFh"/>
+                            <constraint firstAttribute="width" constant="20" id="SJ5-Yy-MHo"/>
+                        </constraints>
+                        <state key="normal" image="unselection"/>
+                        <state key="selected" image="selection"/>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpy-jN-VCq">
+                        <rect key="frame" x="261" y="20.5" width="80" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="KSz-42-fHZ"/>
+                            <constraint firstAttribute="width" constant="80" id="qlw-io-oUu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="FOLLOW" backgroundImage="gradient">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="followClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="f1a-86-Ah6"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" name="lotusBackground"/>
+                <constraints>
+                    <constraint firstItem="8qg-NR-hsC" firstAttribute="leading" secondItem="uRm-pI-tJY" secondAttribute="trailing" constant="8" id="2YA-Zs-vFF"/>
+                    <constraint firstItem="dpy-jN-VCq" firstAttribute="centerY" secondItem="uRm-pI-tJY" secondAttribute="centerY" id="7Cx-DI-3W5"/>
+                    <constraint firstItem="uRm-pI-tJY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="8zZ-8o-34U"/>
+                    <constraint firstAttribute="trailing" secondItem="MeM-rH-QbR" secondAttribute="trailing" constant="12" id="Eau-ub-OID"/>
+                    <constraint firstAttribute="bottom" secondItem="uRm-pI-tJY" secondAttribute="bottom" constant="8" id="W78-CS-HWh"/>
+                    <constraint firstItem="uRm-pI-tJY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="YFI-kL-YkZ"/>
+                    <constraint firstItem="MeM-rH-QbR" firstAttribute="leading" secondItem="8qg-NR-hsC" secondAttribute="trailing" constant="2" id="aXG-U1-vT7"/>
+                    <constraint firstAttribute="trailing" secondItem="dpy-jN-VCq" secondAttribute="trailing" constant="10" id="bOi-fH-Fek"/>
+                    <constraint firstAttribute="trailing" secondItem="8qg-NR-hsC" secondAttribute="trailing" constant="30" id="jQc-65-K5o"/>
+                    <constraint firstItem="8qg-NR-hsC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="llD-mm-WKQ"/>
+                    <constraint firstAttribute="bottom" secondItem="8qg-NR-hsC" secondAttribute="bottom" constant="8" id="muv-Bp-SgI"/>
+                    <constraint firstItem="MeM-rH-QbR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uAi-77-RY8"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="jQc-65-K5o"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="followButton" destination="dpy-jN-VCq" id="smh-v7-dHf"/>
+                <outlet property="nameLabel" destination="8qg-NR-hsC" id="8di-Ox-F0E"/>
+                <outlet property="profileImageView" destination="uRm-pI-tJY" id="w6y-jN-OeQ"/>
+                <outlet property="selectionStatus" destination="MeM-rH-QbR" id="YUV-B1-dgT"/>
+            </connections>
+            <point key="canvasLocation" x="155.79710144927537" y="137.27678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fake-user" width="445" height="445"/>
+        <image name="gradient" width="414" height="63"/>
+        <image name="selection" width="21" height="20"/>
+        <image name="unselection" width="21" height="20"/>
+        <namedColor name="lotusBackground">
+            <color red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

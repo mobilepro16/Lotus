@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicTableViewHeader" customModule="lotus" customModuleProvider="target">
+            <connections>
+                <outlet property="bookmarksTab" destination="5GG-Yh-zLY" id="Mxf-Fd-wfJ"/>
+                <outlet property="constraint_stackView_height" destination="T5Q-of-N94" id="sXv-7N-V9b"/>
+                <outlet property="historyTab" destination="5ur-RT-1NV" id="fE6-JM-T9W"/>
+                <outlet property="pendingTab" destination="Xdi-zB-Pq3" id="AXj-ho-so1"/>
+                <outlet property="searchView" destination="hhL-M1-1Nk" id="aEW-Uz-OyC"/>
+                <outlet property="tabStackView" destination="ckM-Za-M34" id="F33-9d-tIW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="548" height="223"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-M1-1Nk" customClass="TableHeaderSearchView" customModule="lotus" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="40" width="548" height="72"/>
+                    <color key="backgroundColor" red="0.44705882352941173" green="0.44705882352941173" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="JDJ-WH-58Z"/>
+                    </constraints>
+                </view>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghf-6l-wjn" userLabel="hr">
+                    <rect key="frame" x="0.0" y="146" width="548" height="0.5"/>
+                    <color key="backgroundColor" name="lotusHR"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.25" id="qgX-39-nQ1"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ckM-Za-M34">
+                    <rect key="frame" x="0.0" y="106" width="548" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ur-RT-1NV">
+                            <rect key="frame" x="0.0" y="0.0" width="274" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <state key="normal" title="History">
+                                <color key="titleColor" red="0.2156862745" green="0.56470588239999997" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="bookmarkTabClick:" destination="-1" eventType="touchUpInside" id="BuR-uZ-Qyo"/>
+                                <action selector="historyTabClick:" destination="-1" eventType="touchUpInside" id="McP-4q-2HD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdi-zB-Pq3">
+                            <rect key="frame" x="274" y="0.0" width="274" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <state key="normal" title="Bookmarks">
+                                <color key="titleColor" red="0.2156862745" green="0.56470588239999997" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="pendingTabClick:" destination="-1" eventType="touchUpInside" id="QGr-e5-EXe"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GG-Yh-zLY">
+                            <rect key="frame" x="548" y="0.0" width="0.0" height="30"/>
+                            <state key="normal" title="Playlists"/>
+                            <connections>
+                                <action selector="bookmarkTabClick:" destination="-1" eventType="touchUpInside" id="0hQ-A0-Gka"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="T5Q-of-N94"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdX-lg-XDQ">
+                    <rect key="frame" x="0.0" y="0.0" width="548" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPB-UF-VMz">
+                            <rect key="frame" x="23" y="15" width="81.5" height="35"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="qPB-UF-VMz" secondAttribute="bottom" constant="-10" id="Knd-Nj-HkJ"/>
+                        <constraint firstItem="qPB-UF-VMz" firstAttribute="leading" secondItem="jdX-lg-XDQ" secondAttribute="leading" constant="23" id="S5X-ov-9tC"/>
+                        <constraint firstAttribute="height" constant="40" id="SYE-jN-7yz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="lotusBackground"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hhL-M1-1Nk" secondAttribute="trailing" id="5Bb-ug-QIX"/>
+                <constraint firstItem="hhL-M1-1Nk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6hd-ja-2f7"/>
+                <constraint firstItem="ghf-6l-wjn" firstAttribute="top" secondItem="hhL-M1-1Nk" secondAttribute="bottom" id="AxG-9P-PGt"/>
+                <constraint firstItem="ckM-Za-M34" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GaF-jg-1NX"/>
+                <constraint firstItem="ckM-Za-M34" firstAttribute="top" secondItem="hhL-M1-1Nk" secondAttribute="bottom" constant="-6" id="PDM-4k-Kck"/>
+                <constraint firstItem="ghf-6l-wjn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QM3-ZY-VO1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ckM-Za-M34" secondAttribute="trailing" id="Sz0-0t-HZF"/>
+                <constraint firstItem="hhL-M1-1Nk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YKR-EL-MdE"/>
+                <constraint firstItem="ghf-6l-wjn" firstAttribute="top" secondItem="ckM-Za-M34" secondAttribute="bottom" constant="10" id="ajs-wF-PO5"/>
+                <constraint firstItem="ghf-6l-wjn" firstAttribute="top" secondItem="hhL-M1-1Nk" secondAttribute="bottom" id="cui-Eg-HM5"/>
+                <constraint firstItem="jdX-lg-XDQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gd2-Ot-yAO"/>
+                <constraint firstItem="hhL-M1-1Nk" firstAttribute="top" secondItem="jdX-lg-XDQ" secondAttribute="bottom" id="iiV-vY-JEX"/>
+                <constraint firstItem="jdX-lg-XDQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="l33-Rz-9ge"/>
+                <constraint firstAttribute="trailing" secondItem="ghf-6l-wjn" secondAttribute="trailing" id="mPa-CG-fYH"/>
+                <constraint firstItem="jdX-lg-XDQ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="pGn-Mv-NPL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ckM-Za-M34" secondAttribute="bottom" priority="999" constant="10" id="v6U-qS-8I2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="6hd-ja-2f7"/>
+                    <exclude reference="AxG-9P-PGt"/>
+                    <exclude reference="cui-Eg-HM5"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="228.98550724637684" y="-163.05803571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="lotusBackground">
+            <color red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lotusHR">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

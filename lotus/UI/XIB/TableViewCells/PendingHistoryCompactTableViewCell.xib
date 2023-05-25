@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PendingHistoryCompactTableViewCell" rowHeight="98" id="KGk-i7-Jjw" customClass="PendingHistoryCompactTableViewCell" customModule="lotus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="381" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fake-submarine" translatesAutoresizingMaskIntoConstraints="NO" id="mGF-Dh-pis">
+                        <rect key="frame" x="12" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="mGF-Dh-pis" secondAttribute="height" multiplier="1:1" id="W1N-KH-Bwh"/>
+                            <constraint firstAttribute="width" constant="50" id="X9m-SR-Bfl"/>
+                            <constraint firstAttribute="height" constant="50" id="lnc-Uv-DkU"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tY4-TF-9uj">
+                        <rect key="frame" x="348" y="20.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="Amo-02-HVD"/>
+                            <constraint firstAttribute="height" constant="25" id="Col-yD-sFH"/>
+                            <constraint firstAttribute="width" constant="25" id="FNx-Ir-hUQ"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="vert_dot_menu"/>
+                        <connections>
+                            <action selector="menuButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KTG-9t-D9l"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nk-rr-Ed0">
+                        <rect key="frame" x="70" y="14" width="231" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIf-Tn-Mc5">
+                        <rect key="frame" x="70" y="35" width="231" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="lotusGrayText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mID-5K-Hpg">
+                        <rect key="frame" x="305" y="21.5" width="40" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="KVF-3L-eEh"/>
+                        </constraints>
+                        <state key="normal" image="post"/>
+                        <connections>
+                            <action selector="shareButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bm4-fj-49W"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" name="lotusBackground"/>
+                <constraints>
+                    <constraint firstItem="mGF-Dh-pis" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="0y8-2O-9RG"/>
+                    <constraint firstItem="mID-5K-Hpg" firstAttribute="leading" secondItem="5nk-rr-Ed0" secondAttribute="trailing" constant="4" id="80p-C2-4lL"/>
+                    <constraint firstItem="5nk-rr-Ed0" firstAttribute="top" secondItem="mGF-Dh-pis" secondAttribute="top" constant="6" id="OJ7-FX-vTm"/>
+                    <constraint firstItem="tY4-TF-9uj" firstAttribute="centerY" secondItem="mGF-Dh-pis" secondAttribute="centerY" id="QRk-Fb-fbQ"/>
+                    <constraint firstAttribute="trailing" secondItem="tY4-TF-9uj" secondAttribute="trailing" constant="8" id="SpB-nL-qar"/>
+                    <constraint firstItem="qIf-Tn-Mc5" firstAttribute="leading" secondItem="5nk-rr-Ed0" secondAttribute="leading" id="WtY-TT-tcp"/>
+                    <constraint firstItem="qIf-Tn-Mc5" firstAttribute="bottom" secondItem="mGF-Dh-pis" secondAttribute="bottom" constant="-6" id="gSG-Gh-EN0"/>
+                    <constraint firstItem="tY4-TF-9uj" firstAttribute="leading" secondItem="mID-5K-Hpg" secondAttribute="trailing" constant="3" id="gYI-tc-K5R"/>
+                    <constraint firstItem="mGF-Dh-pis" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="hVU-Of-q61"/>
+                    <constraint firstItem="mGF-Dh-pis" firstAttribute="width" secondItem="mGF-Dh-pis" secondAttribute="height" multiplier="1:1" id="jLi-mo-j0y"/>
+                    <constraint firstItem="qIf-Tn-Mc5" firstAttribute="trailing" secondItem="5nk-rr-Ed0" secondAttribute="trailing" id="qAf-eW-Fd5"/>
+                    <constraint firstItem="5nk-rr-Ed0" firstAttribute="leading" secondItem="mGF-Dh-pis" secondAttribute="trailing" constant="8" id="rh5-kZ-bk7"/>
+                    <constraint firstAttribute="bottom" secondItem="mGF-Dh-pis" secondAttribute="bottom" constant="8" id="rqI-we-05c"/>
+                    <constraint firstItem="mID-5K-Hpg" firstAttribute="centerY" secondItem="tY4-TF-9uj" secondAttribute="centerY" id="xhy-WS-UG3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="albumImageView" destination="mGF-Dh-pis" id="EO7-dS-MUj"/>
+                <outlet property="menuButton" destination="tY4-TF-9uj" id="Wjg-GO-Gl9"/>
+                <outlet property="musicDescriptionLabel" destination="qIf-Tn-Mc5" id="76i-L6-fqk"/>
+                <outlet property="musicTitleLabel" destination="5nk-rr-Ed0" id="W8v-8J-sKL"/>
+                <outlet property="shareButton" destination="mID-5K-Hpg" id="Ssi-LD-4WY"/>
+            </connections>
+            <point key="canvasLocation" x="181.8840579710145" y="64.955357142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fake-submarine" width="150" height="150"/>
+        <image name="post" width="43" height="23"/>
+        <image name="vert_dot_menu" width="36" height="36"/>
+        <namedColor name="lotusBackground">
+            <color red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lotusGrayText">
+            <color red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

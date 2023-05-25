@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>458583751156-8li0u8jknr1c317n1l0omnaicd7j4pcf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.458583751156-8li0u8jknr1c317n1l0omnaicd7j4pcf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC7iiZXWyFY-StIJ2OuehbVao1OtGo_Koo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>458583751156</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.lotusapp.ios</string>
+	<key>PROJECT_ID</key>
+	<string>lotus-apns</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lotus-apns.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:458583751156:ios:6eaeeb69a7d728cf9d21a1</string>
+</dict>
+</plist>
